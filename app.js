@@ -18,4 +18,7 @@ app.use('/', mainRouter);
     res.send('Servidor funcionando, el resto te toca a vos 😋')
 }); */
 
-app.listen(3000, () => { console.log('Servidor arriba en el puerto 3000 🤓👌');})
+// app.listen(3000, () => { console.log('Servidor arriba en el puerto 3000 🤓👌');})
+app.listen(process.env.PORT || 3000, function(){
+    console.log('Servidor arriba en el puerto 3000 🤓👌');
+})

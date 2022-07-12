@@ -50,7 +50,7 @@ const mainController ={
         res.render('index')
     },
     detalle: (req,res) => {
-        res.render('detalleMenu')
+        res.render('menu/detalleMenu')
     }
 };
 
